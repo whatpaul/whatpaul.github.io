@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #968ca0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  background-color: antiquewhite;
+  box-shadow: 0px 0px 10px black;
+  margin: 0px 10px 5px 10px;
+  border-radius: 0px 0px 15px 15px;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-item {
+  padding: 8px;
+  border-radius: 10px;
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.nav-item:hover {
+  background-color: #ac7354;
+  transition: 0.2s;
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item:last-child {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 2px 5px 3px black;
+  color: white;
+  max-width: 900px;
+}
+
+h2 {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    text-align: center;
+    text-shadow: 2px 5px 3px black;
+    color: white;
+    max-width: 900px;
+}
+
+.smart {
+  display: flex;
+  width: 75%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0% 10%;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 15%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 0px #535353;
+  overflow: hidden;
+}
+
+.child1 {
+  background-color: #18a95a;
+}
+
+.child2 {
+  background-color: #bf0000;
+}
+
+.child3 {
+  background-color: #01b0f1;
+}
+
+.child4 {
+  background-color: #7030a0;
+}
+
+.child5 {
+  background-color: #ffc000;
+}
+
+.child-text {
+  max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .smart {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child {
+    margin: 20px;
+    width: 50%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  max-width: 80%;
+  margin: 5%;
+  border: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(3, 33%);
+}
+
+.goalchild {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  text-align: center;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.goal {
+  background-color: antiquewhite;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 3px 0px #535353;
+}
+
+.goalname {
+  max-width: ;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #7d6364;
+  transition: 0.2s;
+}
+
+.forms {
+  margin-top: 7%;
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  display: table-cell;
+  margin-bottom: 2%;
+  color: #fff;
+  font-weight: bold;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px 0px #535353;
+  overflow: hidden;
+}
+
+.form1 {
+  background-color: #18a95a;
+}
+
+.form2 {
+  background-color: #bf0000;
+}
+
+.form3 {
+  background-color: #01b0f1;
+}
+
+.form4 {
+  background-color: #7030a0;
+}
+
+.form5 {
+  background-color: #ffc000;
+}
+
+.box {
+  margin-left: 5%;
+  margin-top: 1.3rem;
+  width: 90%;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 2px solid white;
+}
+
+.box:hover {
+  background-color: rgb(255, 226, 193);
+  transition: 0.2s;
+}
+
+.box:focus {
+  background-color: white;
+  border: 2px solid #4c4652;
+}
+
+.checklist {
+  margin-left: 5%;
+  margin-top: 1.3rem;
+  width: 90%;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 2px solid black;
+  background-color: antiquewhite;
+}
+
+.checkbox {
+  margin-bottom: 2%;
+}
+.label {
+  color: black;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
